@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/l2tabu/french
+# catalog-date 2006-12-15 14:14:43 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-l2tabu-french
 Version:	20061215
 Release:	1
@@ -22,6 +28,7 @@ French translation of l2tabu.
 %doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr-heavy.pdf
 %doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr-light.pdf
 %doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -32,3 +39,5 @@ French translation of l2tabu.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
