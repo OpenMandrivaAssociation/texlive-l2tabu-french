@@ -1,12 +1,13 @@
-# revision 15878
+# revision 31315
 # category Package
 # catalog-ctan /info/l2tabu/french
-# catalog-date 2006-12-15 14:14:43 +0100
+# catalog-date 2013-07-30 20:12:28 +0200
 # catalog-license gpl
-# catalog-version undef
+# catalog-version 2.3
 Name:		texlive-l2tabu-french
-Version:	20061215
-Release:	2
+Epoch:		1
+Version:	2.3
+Release:	1
 Summary:	French translation of l2tabu
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/l2tabu/french
@@ -23,8 +24,7 @@ French translation of l2tabu.
 #-----------------------------------------------------------------------
 %files
 %doc %{_texmfdistdir}/doc/latex/l2tabu-french/README
-%doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr-heavy.pdf
-%doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr-light.pdf
+%doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr.pdf
 %doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr.tex
 
 #-----------------------------------------------------------------------
@@ -36,17 +36,3 @@ French translation of l2tabu.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061215-2
-+ Revision: 753064
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061215-1
-+ Revision: 718793
-- texlive-l2tabu-french
-- texlive-l2tabu-french
-- texlive-l2tabu-french
-- texlive-l2tabu-french
-
