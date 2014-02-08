@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-l2tabu-french
 Version:	20061215
-Release:	2
+Release:	3
 Summary:	French translation of l2tabu
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/l2tabu/french
