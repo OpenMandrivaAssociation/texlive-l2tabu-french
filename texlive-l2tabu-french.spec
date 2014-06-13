@@ -7,7 +7,7 @@
 Name:		texlive-l2tabu-french
 Epoch:		1
 Version:	2.3
-Release:	5
+Release:	6
 Summary:	French translation of l2tabu
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/l2tabu/french
