@@ -4,7 +4,7 @@ Version:	31315
 Release:	2
 Summary:	French translation of l2tabu
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/l2tabu/french
+URL:		https://www.ctan.org/tex-archive/info/l2tabu/french
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-french.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-french.doc.r%{version}.tar.xz
