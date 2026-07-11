@@ -1,32 +1,20 @@
-Name:		texlive-l2tabu-french
+%global tl_name l2tabu-french
+%global tl_revision 31315
+
+Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	31315
-Release:	2
+Version:	2.3
+Release:	%{tl_revision}.1
 Summary:	French translation of l2tabu
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/info/l2tabu/french
-License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-french.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-french.doc.r%{version}.tar.xz
+License:	gpl
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-french.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-french.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
 French translation of l2tabu.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/latex/l2tabu-french/README
-%doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr.pdf
-%doc %{_texmfdistdir}/doc/latex/l2tabu-french/l2tabufr.tex
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
